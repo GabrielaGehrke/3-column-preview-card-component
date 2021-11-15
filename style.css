@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap');
+
+body {
+  --grey: hsl(179, 100%, 13%);
+  --grey: hsl(184, 100%, 22%);
+  --grey: hsl(31, 77%, 52%);
+
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: white;
+  font-size: 35px;
+  font-style: inherit;
+}
+
+p {
+  color: white;
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  font-style: normal;
+  margin-bottom: 3rem;
+  line-height: 1.7em;
+}
+
+img {
+  width: 60px;
+  height: auto;
+}
+
+button {
+  background: white;
+  border-radius: 118px;
+  border: none;
+  font-size: 16px;
+  width: 150px;
+  height: 35px;
+  text-align: center;
+}
+
+button p {
+  margin-top: 0.3rem;
+  opacity: 70%;
+}
+
+#sedans button p {
+  color: hsl(27, 91%, 55%);
+}
+
+#suvs button p {
+  color: hsl(184, 100%, 22%);
+}
+
+#luxury button p {
+  color: hsl(179, 100%, 13%);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.medidas {
+  width: 12rem;
+  height: 22rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sedans {
+  background: hsl(31, 77%, 52%);
+  border-radius: 5% 0 0 5%;
+}
+
+#suvs {
+  background: hsl(192, 91%, 21%);
+}
+
+#luxury {
+  background: hsl(120, 94%, 12%);
+  border-radius: 0 5% 5% 0;
+}
+
+.attribution {
+  text-align: center;
+  flex-grow: 3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  #sedans {
+    border-radius: 5% 5% 0 0;
+  }
+  #luxury {
+    border-radius: 0 0 5% 5%;
+  }
+}
